@@ -1,8 +1,8 @@
 const express = require('express');
+const router = express.Router();
 
-module.exports = function (server) {
+module.exports = server => {
     // API Routes
-    const router = express.Router();
     server.use('/api', router);
 
     // TODO Routes
