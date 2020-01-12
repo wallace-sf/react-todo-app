@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const dotenv = require('dotenv').config({path: __dirname + '/.env'});
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ['./src/index.js'],
     output: {
         path: __dirname + '/public',
         filename: './app.js'
